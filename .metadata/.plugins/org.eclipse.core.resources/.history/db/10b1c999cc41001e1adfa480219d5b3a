@@ -1,0 +1,23 @@
+package com.spree;
+
+public class Mouse_Hover_MEN_Category {
+	@Test(enabled=true)
+	public void MouseHoverAmazon() throws InterruptedException
+	{
+		WebDriverManager.chromedriver().setup();
+		// create Edge instance and maximize it
+		ChromeDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get( "https://www.amazon.in/");
+        
+		WebElement signin = driver.findElement(By.id(("nav-link-accountList-nav-line-1")));
+		Actions action = new Actions(driver);
+        action.moveToElement(signin).perform();
+        //driver.findElementById("signInBtn").click();
+        //Thread.sleep(2000);
+        driver.findElement(By.xpath(("//span[text()='Sign in']"))).click();
+        String title = driver.getTitle();
+        Assert.assertEquals("Amazon Sign In", title);
+
+	}
+}

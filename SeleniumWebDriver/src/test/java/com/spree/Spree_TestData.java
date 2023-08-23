@@ -16,5 +16,4 @@ public class Spree_TestData {
 			{"Gamma", 8},
 		};
 	}
-
 }

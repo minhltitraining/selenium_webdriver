@@ -12,7 +12,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class WebOrder_Login_DataDrivenTest extends WebOrder_TestData {
 	WebDriver driver;
 
-	@Test(dataProvider = "Login")
+	@Test(dataProvider = "LoginExcelData")
 	public void login_to_app(String uname, String pass) {
 		driver.findElement(By.xpath("//input[@name='ctl00$MainContent$username']")).sendKeys(uname);
 		driver.findElement(By.xpath("//input[@name='ctl00$MainContent$password']")).sendKeys(pass);

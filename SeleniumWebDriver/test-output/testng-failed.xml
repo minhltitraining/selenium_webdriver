@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.spree.Spree_FilterBrand_NumItem">
+      <class name="com.nopcommerce.NOP_CreateProduct_DeleteProduct_Verify">
         <methods>
-          <include name="selectBrand"/>
-          <include name="clearFilter"/>
-          <include name="selectCategory"/>
-          <include name="pre_condition"/>
           <include name="post_condition"/>
+          <include name="pre_condition"/>
+          <include name="f"/>
         </methods>
-      </class> <!-- com.spree.Spree_FilterBrand_NumItem -->
+      </class> <!-- com.nopcommerce.NOP_CreateProduct_DeleteProduct_Verify -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

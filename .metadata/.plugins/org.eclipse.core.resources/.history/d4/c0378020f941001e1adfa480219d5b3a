@@ -1,0 +1,33 @@
+package com.nopcommerce;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class NOP_CreateProduct_DeleteProduct_Verify {
+
+	WebDriver driver;
+
+	@BeforeTest
+	public void pre_condition() {
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://admin-demo.nopcommerce.com/");
+		driver.findElement(By.cssSelector("button[class='button-1 login-button']")).click();
+	}
+
+	@AfterTest
+	public void post_condition() {
+		driver.close();
+	}
+
+	@Test
+	public void f() {
+	}
+}

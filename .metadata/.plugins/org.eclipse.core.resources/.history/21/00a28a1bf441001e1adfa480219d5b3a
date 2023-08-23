@@ -1,0 +1,73 @@
+package com.WebOrder;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class WebTable_Pagination_SearchName {
+	
+	
+	WebDriver driver;
+	//searching for name and check salary
+	public void checkSalary(List<WebElement> fNameElements, String tgtFName, String expSalary) {
+		for (WebElement fName : fNameElements) {
+			if (fName.getText().equals(tgtFName)) {
+				WebElement salaryElement = fName.findElement(By.xpath("//following-sibling::td[5]"));
+				Assert.assertEquals(salaryElement.getText(), expSalary);
+			}
+		}
+	}
+
+
+	@Test
+	public void searchName() throws InterruptedException {
+
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://datatables.net/examples/data_sources/server_side");
+		Thread.sleep(2000);
+		List<WebElement> fNameElements = driver.findElements(By.xpath("//table[@id='example']/tbody/tr/td[1]"));
+
+		
+
+		for (WebElement fName : fNameElements) {
+			
+			String currentFName = fName.getText()''
+//			if (fName.getText().equals("Bruno")) {
+//				WebElement salaryElement = fName.findElement(By.xpath("//following-sibling::td[5]"));
+//				Assert.assertEquals(salaryElement.getText(), "$163,500");
+//			}
+			Thread.sleep(2000);
+			System.out.println(fName.getText());
+			WebElement salaryElement = fName.findElement(By.xpath("//following-sibling::td[5]"));
+			
+			System.out.println(salaryElement.getText());
+			
+		}
+//		String nextButton = driver.findElement(By.id("example_next")).getAttribute("class");
+//		while( !nextButton.contains("disabled")) {
+//			driver.findElement(By.id("example_next")).click();
+//			Thread.sleep(2000);
+//			fNameElements = driver.findElements(By.xpath("//table[@id='example']/tbody/tr/td[1]"));
+//			for (WebElement fName : fNameElements) {
+//				if (fName.getText().equals("Bruno")) {
+//					WebElement salaryElement = fName.findElement(By.xpath("//following-sibling::td[5]"));
+//					Assert.assertEquals(salaryElement.getText(), "$163,500");
+//
+//				}
+//			}
+//			
+//		}
+		driver.close();
+	}
+}

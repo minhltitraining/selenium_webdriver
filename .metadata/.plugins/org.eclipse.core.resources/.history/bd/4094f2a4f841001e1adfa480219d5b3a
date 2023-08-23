@@ -1,0 +1,12 @@
+package com.nopcommerce;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
+
+public class NOP_CreateProduct_DeleteProduct_Verify {
+	
+	WebDriver driver;
+  @Test
+  public void f() {
+  }
+}

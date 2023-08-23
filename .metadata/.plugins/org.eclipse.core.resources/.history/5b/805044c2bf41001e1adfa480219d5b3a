@@ -1,0 +1,6 @@
+package com.WebOrder;
+
+public class ReadExcel {
+	private static Sheet ExcelWSheet;
+	private static Workbook ExcelWBook;
+}

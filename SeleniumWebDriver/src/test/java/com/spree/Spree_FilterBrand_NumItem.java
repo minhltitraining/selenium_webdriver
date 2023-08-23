@@ -56,6 +56,6 @@ public class Spree_FilterBrand_NumItem extends Spree_TestData {
 		Thread.sleep(2000);
 		WebElement itemsElement = driver.findElement(By.xpath("//div[@data-hook='homepage_products']/div[1]"));
 		List<WebElement> items = itemsElement.findElements(By.xpath("./child::*"));
-		Assert.assertEquals(items.size(), expNumItems);
+		Assert.assertEquals(items.size(),expNumItems);
 	}
 }
