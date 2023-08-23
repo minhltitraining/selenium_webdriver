@@ -1,0 +1,16 @@
+package com.spree;
+
+import org.testng.annotations.DataProvider;
+
+public class Spree_TestData {
+	
+	@DataProvider(name="FilterBrand")
+	public Object[][] getNumItemsForFilterBrand(){
+		return new Object[][] {
+			{"Alpha", 9},
+			{"Zeta", 12},
+			
+		};
+	}
+
+}

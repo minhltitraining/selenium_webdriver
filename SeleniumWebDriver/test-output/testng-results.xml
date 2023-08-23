@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-23T02:49:01 UTC" name="Default suite" finished-at="2023-08-23T02:49:29 UTC" duration-ms="28114">
+    <groups>
+    </groups>
+    <test started-at="2023-08-23T02:49:01 UTC" name="Default test" finished-at="2023-08-23T02:49:29 UTC" duration-ms="28114">
+      <class name="com.spree.Spree_FilterBrand_NumItem">
+        <test-method is-config="true" signature="pre_condition()[pri:0, instance:com.spree.Spree_FilterBrand_NumItem@10683d9d]" started-at="2023-08-23T02:49:01 UTC" name="pre_condition" finished-at="2023-08-23T02:49:06 UTC" duration-ms="5637" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pre_condition -->
+        <test-method is-config="true" signature="selectCategory()[pri:0, instance:com.spree.Spree_FilterBrand_NumItem@10683d9d]" started-at="2023-08-23T02:49:06 UTC" name="selectCategory" finished-at="2023-08-23T02:49:07 UTC" duration-ms="1110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCategory -->
+        <test-method signature="selectBrand(java.lang.String,java.lang.Integer)[pri:0, instance:com.spree.Spree_FilterBrand_NumItem@10683d9d]" started-at="2023-08-23T02:49:07 UTC" name="selectBrand" data-provider="FilterBrand" finished-at="2023-08-23T02:49:10 UTC" duration-ms="2086" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Alpha]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectBrand -->
+        <test-method is-config="true" signature="clearFilter()[pri:0, instance:com.spree.Spree_FilterBrand_NumItem@10683d9d]" started-at="2023-08-23T02:49:10 UTC" name="clearFilter" finished-at="2023-08-23T02:49:10 UTC" duration-ms="73" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearFilter -->
+        <test-method is-config="true" signature="selectCategory()[pri:0, instance:com.spree.Spree_FilterBrand_NumItem@10683d9d]" started-at="2023-08-23T02:49:10 UTC" name="selectCategory" finished-at="2023-08-23T02:49:11 UTC" duration-ms="1033" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCategory -->
+        <test-method signature="selectBrand(java.lang.String,java.lang.Integer)[pri:0, instance:com.spree.Spree_FilterBrand_NumItem@10683d9d]" started-at="2023-08-23T02:49:11 UTC" name="selectBrand" data-provider="FilterBrand" finished-at="2023-08-23T02:49:13 UTC" duration-ms="2068" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Zeta]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectBrand -->
+        <test-method is-config="true" signature="clearFilter()[pri:0, instance:com.spree.Spree_FilterBrand_NumItem@10683d9d]" started-at="2023-08-23T02:49:13 UTC" name="clearFilter" finished-at="2023-08-23T02:49:13 UTC" duration-ms="45" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearFilter -->
+        <test-method is-config="true" signature="selectCategory()[pri:0, instance:com.spree.Spree_FilterBrand_NumItem@10683d9d]" started-at="2023-08-23T02:49:13 UTC" name="selectCategory" finished-at="2023-08-23T02:49:14 UTC" duration-ms="1047" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCategory -->
+        <test-method signature="selectBrand(java.lang.String,java.lang.Integer)[pri:0, instance:com.spree.Spree_FilterBrand_NumItem@10683d9d]" started-at="2023-08-23T02:49:14 UTC" name="selectBrand" data-provider="FilterBrand" finished-at="2023-08-23T02:49:16 UTC" duration-ms="2070" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Delta]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectBrand -->
+        <test-method is-config="true" signature="clearFilter()[pri:0, instance:com.spree.Spree_FilterBrand_NumItem@10683d9d]" started-at="2023-08-23T02:49:16 UTC" name="clearFilter" finished-at="2023-08-23T02:49:16 UTC" duration-ms="63" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearFilter -->
+        <test-method is-config="true" signature="selectCategory()[pri:0, instance:com.spree.Spree_FilterBrand_NumItem@10683d9d]" started-at="2023-08-23T02:49:16 UTC" name="selectCategory" finished-at="2023-08-23T02:49:17 UTC" duration-ms="1037" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCategory -->
+        <test-method signature="selectBrand(java.lang.String,java.lang.Integer)[pri:0, instance:com.spree.Spree_FilterBrand_NumItem@10683d9d]" started-at="2023-08-23T02:49:17 UTC" name="selectBrand" data-provider="FilterBrand" finished-at="2023-08-23T02:49:19 UTC" duration-ms="2072" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Theta]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectBrand -->
+        <test-method is-config="true" signature="clearFilter()[pri:0, instance:com.spree.Spree_FilterBrand_NumItem@10683d9d]" started-at="2023-08-23T02:49:19 UTC" name="clearFilter" finished-at="2023-08-23T02:49:19 UTC" duration-ms="49" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearFilter -->
+        <test-method is-config="true" signature="selectCategory()[pri:0, instance:com.spree.Spree_FilterBrand_NumItem@10683d9d]" started-at="2023-08-23T02:49:19 UTC" name="selectCategory" finished-at="2023-08-23T02:49:20 UTC" duration-ms="1038" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCategory -->
+        <test-method signature="selectBrand(java.lang.String,java.lang.Integer)[pri:0, instance:com.spree.Spree_FilterBrand_NumItem@10683d9d]" started-at="2023-08-23T02:49:20 UTC" name="selectBrand" data-provider="FilterBrand" finished-at="2023-08-23T02:49:22 UTC" duration-ms="2083" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Beta]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectBrand -->
+        <test-method is-config="true" signature="clearFilter()[pri:0, instance:com.spree.Spree_FilterBrand_NumItem@10683d9d]" started-at="2023-08-23T02:49:22 UTC" name="clearFilter" finished-at="2023-08-23T02:49:22 UTC" duration-ms="57" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearFilter -->
+        <test-method is-config="true" signature="selectCategory()[pri:0, instance:com.spree.Spree_FilterBrand_NumItem@10683d9d]" started-at="2023-08-23T02:49:22 UTC" name="selectCategory" finished-at="2023-08-23T02:49:23 UTC" duration-ms="1044" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCategory -->
+        <test-method signature="selectBrand(java.lang.String,java.lang.Integer)[pri:0, instance:com.spree.Spree_FilterBrand_NumItem@10683d9d]" started-at="2023-08-23T02:49:23 UTC" name="selectBrand" data-provider="FilterBrand" finished-at="2023-08-23T02:49:25 UTC" duration-ms="2069" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Epsilon]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectBrand -->
+        <test-method is-config="true" signature="clearFilter()[pri:0, instance:com.spree.Spree_FilterBrand_NumItem@10683d9d]" started-at="2023-08-23T02:49:25 UTC" name="clearFilter" finished-at="2023-08-23T02:49:25 UTC" duration-ms="64" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearFilter -->
+        <test-method is-config="true" signature="selectCategory()[pri:0, instance:com.spree.Spree_FilterBrand_NumItem@10683d9d]" started-at="2023-08-23T02:49:25 UTC" name="selectCategory" finished-at="2023-08-23T02:49:27 UTC" duration-ms="1041" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCategory -->
+        <test-method signature="selectBrand(java.lang.String,java.lang.Integer)[pri:0, instance:com.spree.Spree_FilterBrand_NumItem@10683d9d]" started-at="2023-08-23T02:49:27 UTC" name="selectBrand" data-provider="FilterBrand" finished-at="2023-08-23T02:49:29 UTC" duration-ms="2067" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Gamma]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectBrand -->
+        <test-method is-config="true" signature="clearFilter()[pri:0, instance:com.spree.Spree_FilterBrand_NumItem@10683d9d]" started-at="2023-08-23T02:49:29 UTC" name="clearFilter" finished-at="2023-08-23T02:49:29 UTC" duration-ms="58" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearFilter -->
+        <test-method is-config="true" signature="post_condition()[pri:0, instance:com.spree.Spree_FilterBrand_NumItem@10683d9d]" started-at="2023-08-23T02:49:29 UTC" name="post_condition" finished-at="2023-08-23T02:49:29 UTC" duration-ms="159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- post_condition -->
+      </class> <!-- com.spree.Spree_FilterBrand_NumItem -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

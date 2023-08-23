@@ -1,0 +1,9 @@
+package com.WebOrder;
+
+import org.testng.annotations.Test;
+
+public class ExplicitWait_Example {
+  @Test
+  public void f() {
+  }
+}

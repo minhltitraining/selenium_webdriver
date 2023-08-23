@@ -1,0 +1,22 @@
+package com.WebOrder;
+
+import org.testng.annotations.DataProvider;
+
+public class WebOrder_TestData {
+
+	@DataProvider(name = "Login")
+	public Object[][] getDataforLogin() {
+		return new Object[][] { { "Tester", "test" }, { "Tester", "test" }, { "Tester", "test" }, };
+	}
+	
+	@DataProvider(name = "WebOrder_Login_All_TCs")
+	public Object[][] getLogin_All_TCs_Scenarios() {
+		return new Object[][] { 
+			{ "Tester", "test", "Logout" }, 
+			{ "Tester1", "test", "Invalid Login or Password." }, 
+			{ "Tester", "test1" ,"Invalid Login or Password."}, 
+			{ "", "test", "Invalid Login or Password." }, 
+			{ "Tester", "" , "Invalid Login or Password."}, 
+			};
+	}
+}

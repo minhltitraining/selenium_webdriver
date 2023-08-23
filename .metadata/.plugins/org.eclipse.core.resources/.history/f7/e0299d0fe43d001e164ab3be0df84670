@@ -1,0 +1,18 @@
+package com.WebOrder;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class WebOrder_Login {
+
+	@Test
+	public void login_to_app() {
+		WebDriverManager.chromedriver().setup();
+		ChromeDriver driver = new ChromeDriver();
+		
+	}
+
+}

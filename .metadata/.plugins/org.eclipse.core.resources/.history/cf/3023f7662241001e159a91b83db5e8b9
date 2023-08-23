@@ -1,0 +1,44 @@
+package com.WebOrder;
+
+import org.testng.annotations.DataProvider;
+
+public class WebOrder_TestData {
+
+	@DataProvider(name = "Login")
+	public Object[][] getDataforLogin() {
+		return new Object[][] { { "Tester", "test" }, { "Tester", "test" }, { "Tester", "test" }, };
+	}
+	
+	@DataProvider(name = "WebOrder_Login_All_TCs")
+	public Object[][] getLogin_All_TCs_Scenarios() {
+		return new Object[][] { 
+			{ "Tester", "test", "Logout" }, 
+			{ "Tester1", "test", "Invalid Login or Password." }, 
+			{ "Tester", "test1" ,"Invalid Login or Password."}, 
+			{ "", "test", "Invalid Login or Password." }, 
+			{ "Tester", "" , "Invalid Login or Password."}, 
+			};
+	}
+	
+	@DataProvider(name = "WebOrder_CreateOrder_All_TCs")
+	public Object[][] createOrder_All_TCs() {
+		return new Object[][] { 
+			{ "MyMoney", "5", "Minh", "123 Main St", "Dallas", "75000", "Visa", "123456789" ,"12/23", "valid" }, 
+			{ "MyMoney", "5", "Nguyen", "123 Main St", "Dallas", "75000", "MasterCard", "123456789" ,"12/23", "valid" }, 
+			{ "MyMoney", "", "Minh", "123 Main St", "Dallas", "75000", "Visa", "123456789" ,"12/23", "empty_quantity" }, 
+//			{ "MyMoney", "0", "Minh", "123 Main St", "Dallas", "75000", "Visa", "123456789" ,"12/23" }, 
+//			{ "MyMoney", "5", "", "123 Main St", "Dallas", "75000", "Visa", "123456789" ,"12/23" }, 
+//			{ "MyMoney", "5", "Minh", "", "Dallas", "75000", "Visa", "123456789" ,"12/23" }, 
+//			{ "MyMoney", "5", "Minh", "123 Main St", "", "75000", "Visa", "123456789" ,"12/23" }, 
+//			{ "MyMoney", "5", "Minh", "123 Main St", "Dallas", "", "Visa", "123456789" ,"12/23" }, 
+//			{ "MyMoney", "5", "Minh", "123 Main St", "Dallas", "abcde", "Visa", "123456789" ,"12/23" },
+//			
+//			{ "MyMoney", "5", "Minh", "123 Main St", "Dallas", "75000", "", "123456789" ,"12/23" }, 
+//			{ "MyMoney", "5", "Minh", "123 Main St", "Dallas", "75000", "Visa", "" ,"12/23" }, 
+//			{ "MyMoney", "5", "Minh", "123 Main St", "Dallas", "75000", "Visa", "abcdef" ,"12/23" },
+//			{ "MyMoney", "5", "Minh", "123 Main St", "Dallas", "75000", "Visa", "123456789" ,"" },
+//			{ "MyMoney", "5", "Minh", "123 Main St", "Dallas", "75000", "Visa", "123456789" ,"abcdef" },
+//			{ "MyMoney", "5", "Minh", "123 Main St", "Dallas", "75000", "Visa", "123456789" ,"12-23" },
+			};
+	}
+}

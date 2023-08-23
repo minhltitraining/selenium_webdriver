@@ -1,0 +1,9 @@
+package com.spree;
+
+import org.testng.annotations.Test;
+
+public class Spree_VerifyCheckout.java {
+  @Test
+  public void f() {
+  }
+}

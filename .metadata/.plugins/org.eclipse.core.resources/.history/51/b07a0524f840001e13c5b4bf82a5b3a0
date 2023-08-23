@@ -1,0 +1,11 @@
+package com.WebOrder;
+
+import org.testng.annotations.DataProvider;
+
+public class WebOder_TestData {
+
+	@DataProvider(name = "Login")
+	public Object[][] getDataforLogin() {
+		return new Object[][] { { "Tester", "test" }, { "Tester", "test" }, { "Tester", "test" }, };
+	}
+}

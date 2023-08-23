@@ -1,0 +1,9 @@
+package com.WebOrder;
+
+import org.testng.annotations.Test;
+
+public class WebOrder_Login_Parameter_Example {
+  @Test
+  public void f() {
+  }
+}

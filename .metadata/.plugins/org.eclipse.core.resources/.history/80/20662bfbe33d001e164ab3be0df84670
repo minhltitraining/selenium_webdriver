@@ -1,0 +1,14 @@
+package com.WebOrder;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class WebOrder_Login {
+
+	@Test
+	public void login_to_app() {
+		fail("Not yet implemented");
+	}
+
+}

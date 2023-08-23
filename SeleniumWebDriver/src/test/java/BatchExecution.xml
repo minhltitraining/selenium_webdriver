@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite">
+	<test name="Test">
+		<classes>
+			<class name="com.WebOrder.WebOrder_Login_All_TCs_Example"/>
+			<class name="com.WebOrder.WebOrder_Login_Create_Unique_Order"/>
+			<class name="com.WebOrder.WebOrder_DeleteOrder_VerifyOrder"/>
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->
