@@ -7,7 +7,7 @@
         <methods>
           <include name="post_condition"/>
           <include name="pre_condition"/>
-          <include name="f"/>
+          <include name="addProduct"/>
         </methods>
       </class> <!-- com.nopcommerce.NOP_CreateProduct_DeleteProduct_Verify -->
     </classes>

@@ -1,0 +1,52 @@
+package com.nopcommerce;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class NOP_CreateProduct_DeleteProduct_Verify {
+
+	WebDriver driver;
+
+	@BeforeTest
+	public void pre_condition() {
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		driver.get("https://admin-demo.nopcommerce.com/");
+		driver.findElement(By.cssSelector("button[class='button-1 login-button']")).click();
+	}
+
+	@AfterTest
+	public void post_condition() {
+		driver.close();
+	}
+
+	
+	public String getNumProduct() throws InterruptedException {
+		driver.findElement(By.xpath("//a[@class='nav-link']/p[normalize-space()='Catalog']")).click();
+		driver.findElement(By.xpath("//a[@class='nav-link']/p[normalize-space()='Products']")).click();
+		Thread.sleep(2000);
+		String productInfos = driver.findElement(By.id("products-grid_info")).getText();
+		return productInfos.split(" ")[2];
+	}
+	@Test
+	public void addProduct() throws InterruptedException {
+		int numProductBefore = Integer.parseInt(getNumProduct());
+		driver.findElement(By.xpath("//i[@class='fas fa-plus-square']")).click();
+		driver.findElement(By.id("Name")).sendKeys("Minh_product");
+		driver.findElement(By.id("Sku")).sendKeys("Minh_sku");
+		driver.findElement(By.id("Price")).sendKeys("1000");
+		
+		Thread.sleep(5000);
+		System.out.println(numProductBefore);
+	}
+}
